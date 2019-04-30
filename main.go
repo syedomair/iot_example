@@ -73,7 +73,7 @@ func main() {
 
 func IOTServer(rw http.ResponseWriter, req *http.Request) {
 
-	//Wrting response with all the data in iotDataList in JSON format.
+	//Writing response with all the data in iotDataList in JSON format.
 	jsonIOTDataList, _ := json.Marshal(iotDataList)
 	rw.Write(jsonIOTDataList)
 }
