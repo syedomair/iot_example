@@ -24,7 +24,7 @@ var iotDataList = make([]*IOTData, 0)
 func main() {
 
 	//Device Simulation
-	//Device pubishing NATS messages every 2 seconds
+	//Device publishing NATS messages at every 2 seconds
 	go func() {
 		natClient, _ := nats.Connect(nats.DefaultURL)
 		for {
@@ -73,7 +73,7 @@ func main() {
 
 func IOTServer(rw http.ResponseWriter, req *http.Request) {
 
-	//Writing response with all the data in iotDataList in JSON format.
+	//Writing response with all the data in iotDataList in the JSON format.
 	jsonIOTDataList, _ := json.Marshal(iotDataList)
 	rw.Write(jsonIOTDataList)
 }
