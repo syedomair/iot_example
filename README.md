@@ -1,4 +1,4 @@
-# IOT NATS Example
+# IoT NATS Example
 This program is a simple example of using NATS for IOT applications.
 
 In this application there are two asynchronous processes, 
